@@ -42,7 +42,14 @@ If this is a requirement, please use a more advanced web server.
 
 **EXAMPLES**
 
-    # Make the instance available on any address (with port 8080)
+    # Serve the instance within the local machine only; on default port 8080
+    $ wp server --host=127.0.0.1
+    PHP 5.6.9 Development Server started at Tue May 24 01:27:11 2016
+    Listening on http://127.0.0.1:8080
+    Document root is /
+    Press Ctrl-C to quit.
+
+    # Serve the instance locally or to any network request (broadcast interface) on default port 8080
     $ wp server --host=0.0.0.0
     PHP 5.6.9 Development Server started at Tue May 24 01:27:11 2016
     Listening on http://0.0.0.0:8080
